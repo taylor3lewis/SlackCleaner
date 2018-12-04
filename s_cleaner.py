@@ -28,9 +28,10 @@ if __name__ == '__main__':
     email_field.send_keys(EMAIL)
     pass_field.send_keys(PASSWORD)
     time.sleep(3)
-    driver.find_element_by_id("signin_btn").click()
-    time.sleep(5)
 
+    driver.find_element_by_id("signin_btn").click()
+
+    time.sleep(3)
     actions = ActionChains(driver)
 
     for a in driver.find_elements_by_class_name("p-channel_sidebar__channel"):
@@ -38,6 +39,7 @@ if __name__ == '__main__':
             a.click()
             break
 
+    time.sleep(3)
     print "COMEÇOU A LIMPEZA"
 
     element_list = driver.find_element_by_class_name("c-virtual_list__scroll_container")
