@@ -11,6 +11,7 @@ SCROLL_NUMBER = 15
 TEAM = "_TEAM_NAME_"
 EMAIL = "EMAIL@gmail.com"
 PASSWORD = "_PASS_WORD_"
+CHANNEL = "_CHANNEL_"
 
 if __name__ == '__main__':
     driver = selenium.webdriver.Firefox()
@@ -33,7 +34,7 @@ if __name__ == '__main__':
     actions = ActionChains(driver)
 
     for a in driver.find_elements_by_class_name("p-channel_sidebar__channel"):
-        if str(a.get_attribute('href')).split('/')[-1] == "CA32Y4W03":
+        if str(a.get_attribute('href')).split('/')[-1] == CHANNEL:
             a.click()
             break
 
