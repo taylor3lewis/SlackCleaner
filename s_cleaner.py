@@ -5,9 +5,6 @@ import selenium.common
 import selenium.webdriver
 from selenium.webdriver import ActionChains
 
-WAIT_TO_LOAD = 3
-SCROLL_NUMBER = 15
-
 TEAM = "_TEAM_NAME_"
 EMAIL = "EMAIL@gmail.com"
 PASSWORD = "_PASS_WORD_"
